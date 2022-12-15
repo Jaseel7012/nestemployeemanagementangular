@@ -11,14 +11,19 @@ import { LoginEmployeeComponent } from './login-employee/login-employee.componen
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { SearchEmpComponent } from './search-emp/search-emp.component';
 import { EditEmpComponent } from './edit-emp/edit-emp.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { EmployeeAddComponent } from './employee-add/employee-add.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SecurityComponent } from './security/security.component';
+import { ViewSecurityComponent } from './view-security/view-security.component';
+import { SearchGuardComponent } from './search-guard/search-guard.component'
 const myroute:Routes=[
 {
   path:''
   ,component:AdminComponent
 },{
-  path:'addemp',
-  component:AddEmployeeComponent
+  path:'empadd',
+  component:EmployeeAddComponent
 },{
   path:'loginemp',
   component:LoginEmployeeComponent
@@ -28,6 +33,18 @@ const myroute:Routes=[
 },{
   path:'edit',
   component:EditEmpComponent
+},{
+  path:'sec',
+  component:SecurityComponent
+},{
+  path:'viewemp',
+  component:ViewEmployeeComponent
+},{
+  path:'viewsec',
+  component:ViewSecurityComponent
+},{
+  path:'searchsec',
+  component:SearchGuardComponent
 }
 ]
 @NgModule({
@@ -38,7 +55,12 @@ const myroute:Routes=[
     LoginEmployeeComponent,
     ViewEmployeeComponent,
     SearchEmpComponent,
-    EditEmpComponent
+    EditEmpComponent,
+    EmployeeAddComponent,
+    NavbarComponent,
+    SecurityComponent,
+    ViewSecurityComponent,
+    SearchGuardComponent
   ],
   imports: [
     BrowserModule,

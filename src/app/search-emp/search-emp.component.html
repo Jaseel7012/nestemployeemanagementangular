@@ -1,4 +1,4 @@
-
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -6,14 +6,36 @@
                 <h1 class="text-center">Search</h1>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Name</label>
-                    <input type="text"  class="form-control" placeholder="Employee Name..">
+                    <input type="text" name="name" [(ngModel)]="name"  class="form-control" placeholder="Employee Name..">
                 </div>
                 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-2 text-center">
-                    <button class="btn btn-success " >Login</button>
+                    <button class="btn btn-success "(click)="read()" >Search</button>
+                </div>
+                <div class="row " *ngFor="let i of s" >
+                    <table class="table">
+                        <thead>
+                          <tr >
+                            
+                            <th scope="col">Name</th>
+                            <th scope="col">Designation</th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody >
+                          <tr >
+                            
+                            <td>{{i.name}}</td>
+                            <td>{{i.designation}}</td>
+                           
+                          </tr>
+                         
+                        </tbody>
+                      </table>
                 </div>
             </div>
         </div>
     </div>
+    
 </div>
 

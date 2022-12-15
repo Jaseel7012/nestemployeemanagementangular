@@ -15,20 +15,5 @@ username=""
 email=""
 passwo=""
 constructor(private api:NewApiService){}
-read=()=>{
- let data:any={
-  "name":this.name,
-    "designation":this.designation,
-    "username":this.username,
-    "passwo": this.passwo
 
- }
- 
- 
-  
-  
-
-
-
-
-}}
+}

@@ -16,7 +16,7 @@ read=()=>{
     "password":this.password
   }
   if(this.uname=="admin" && this.password=="password"){
-    this.r.navigate(['/'])
+    this.r.navigate(['/empadd'])
   }
   else{
     alert("invalid")
