@@ -24,7 +24,8 @@ import { LeaveStatusviewComponent } from './leave-statusview/leave-statusview.co
 import { EmplNavbarComponent } from './empl-navbar/empl-navbar.component';
 import { SecurityProfileComponent } from './security-profile/security-profile.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
-import { SecurityNavbarComponent } from './security-navbar/security-navbar.component'
+import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
+import { VisitorLogComponent } from './visitor-log/visitor-log.component'
 const myroute:Routes=[
 {
   path:''
@@ -71,6 +72,9 @@ component:LeaveStatusviewComponent},{
 },{
   path:'seclogin',
   component:SecurityLoginComponent
+},{
+  path:'visitorlog',
+  component:VisitorLogComponent
 }
 ]
 @NgModule({
@@ -94,7 +98,8 @@ component:LeaveStatusviewComponent},{
     EmplNavbarComponent,
     SecurityProfileComponent,
     SecurityLoginComponent,
-    SecurityNavbarComponent
+    SecurityNavbarComponent,
+    VisitorLogComponent
   ],
   imports: [
     BrowserModule,
