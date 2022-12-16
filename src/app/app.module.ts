@@ -21,7 +21,10 @@ import { LeaveComponent } from './leave/leave.component';
 import { EmpProfileComponent } from './emp-profile/emp-profile.component';
 import { LeaveApplyComponent } from './leave-apply/leave-apply.component';
 import { LeaveStatusviewComponent } from './leave-statusview/leave-statusview.component';
-import { EmplNavbarComponent } from './empl-navbar/empl-navbar.component'
+import { EmplNavbarComponent } from './empl-navbar/empl-navbar.component';
+import { SecurityProfileComponent } from './security-profile/security-profile.component';
+import { SecurityLoginComponent } from './security-login/security-login.component';
+import { SecurityNavbarComponent } from './security-navbar/security-navbar.component'
 const myroute:Routes=[
 {
   path:''
@@ -62,7 +65,13 @@ const myroute:Routes=[
 },{
   path:'emplviewleave',
 
-component:LeaveStatusviewComponent}
+component:LeaveStatusviewComponent},{
+  path:'secprofile',
+  component:SecurityProfileComponent
+},{
+  path:'seclogin',
+  component:SecurityLoginComponent
+}
 ]
 @NgModule({
   declarations: [
@@ -82,7 +91,10 @@ component:LeaveStatusviewComponent}
     EmpProfileComponent,
     LeaveApplyComponent,
     LeaveStatusviewComponent,
-    EmplNavbarComponent
+    EmplNavbarComponent,
+    SecurityProfileComponent,
+    SecurityLoginComponent,
+    SecurityNavbarComponent
   ],
   imports: [
     BrowserModule,

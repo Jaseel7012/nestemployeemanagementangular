@@ -35,6 +35,14 @@ empprofile=(data3:any)=>{
   return this.http.post("http://localhost:8080/userid",data3)
 }
 
+ securitylogin=(data5:any)=>{
+  return this.http.post("http://localhost:8080/loginsecurity",data5)
+ }
+ securityprofile=(data6:any)=>{
+  return this.http.post("http://localhost:8080/securityprofile",data6)
+ }
+
+
   // addemp=(data:any)=>{
   //   this.http.post("http://localhost:8080/addemp",data)
   // }
