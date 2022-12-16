@@ -31,6 +31,9 @@ searchsec=(data2:any)=>{
   return this.http.post("http://localhost:8080/searchsecname",data2)
 
 }
+empprofile=(data3:any)=>{
+  return this.http.post("http://localhost:8080/userid",data3)
+}
 
   // addemp=(data:any)=>{
   //   this.http.post("http://localhost:8080/addemp",data)

@@ -16,7 +16,12 @@ import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SecurityComponent } from './security/security.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
-import { SearchGuardComponent } from './search-guard/search-guard.component'
+import { SearchGuardComponent } from './search-guard/search-guard.component';
+import { LeaveComponent } from './leave/leave.component';
+import { EmpProfileComponent } from './emp-profile/emp-profile.component';
+import { LeaveApplyComponent } from './leave-apply/leave-apply.component';
+import { LeaveStatusviewComponent } from './leave-statusview/leave-statusview.component';
+import { EmplNavbarComponent } from './empl-navbar/empl-navbar.component'
 const myroute:Routes=[
 {
   path:''
@@ -45,7 +50,19 @@ const myroute:Routes=[
 },{
   path:'searchsec',
   component:SearchGuardComponent
-}
+},{
+  path:'leave',
+  component:LeaveComponent
+},{
+  path:'empprofile',
+  component:EmpProfileComponent
+},{
+  path:'empleaveapply',
+  component:LeaveApplyComponent
+},{
+  path:'emplviewleave',
+
+component:LeaveStatusviewComponent}
 ]
 @NgModule({
   declarations: [
@@ -60,7 +77,12 @@ const myroute:Routes=[
     NavbarComponent,
     SecurityComponent,
     ViewSecurityComponent,
-    SearchGuardComponent
+    SearchGuardComponent,
+    LeaveComponent,
+    EmpProfileComponent,
+    LeaveApplyComponent,
+    LeaveStatusviewComponent,
+    EmplNavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -21,10 +21,14 @@ read=()=>{
     (resp:any)=>{
 
       console.log(resp);
-      if(resp.message=="success"){
-        this.r.navigate(['/'])
-        this.username=" "
-        this.password=" "
+      if(resp.message=="Success"){
+        let empid=resp.emp_id;
+        console.log(empid);
+        localStorage.setItem("userInfo",empid)
+
+
+        this.r.navigate(['/empprofile'])
+       
       }else{
         alert("Not Exist")
       }
