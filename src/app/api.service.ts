@@ -41,6 +41,9 @@ empprofile=(data3:any)=>{
  securityprofile=(data6:any)=>{
   return this.http.post("http://localhost:8080/securityprofile",data6)
  }
+ editprofile=(data7:any)=>{
+  return this.http.post("http://localhost:8080/edit",data7)
+ }
 
 
   // addemp=(data:any)=>{
