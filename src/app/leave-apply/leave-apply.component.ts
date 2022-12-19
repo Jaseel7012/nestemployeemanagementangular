@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./leave-apply.component.css']
 })
 export class LeaveApplyComponent {
+type=""
+read=()=>{
+  let data:any={
+    "type":this.type
 
+  }
+  console.log(data)
+}
 }

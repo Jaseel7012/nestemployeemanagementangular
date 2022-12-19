@@ -45,6 +45,18 @@ empprofile=(data3:any)=>{
   return this.http.post("http://localhost:8080/edit",data7)
  }
 
+ leaveadminview=()=>{
+  return this.http.get("http://localhost:8080/viewallleave")
+ }
+ emplallogsview=()=>{
+  return this.http.get("http://localhost:8080/viewlogempname")
+
+ }
+
+ empalllogbydate=(data:any)=>{
+  return this.http.post("http://localhost:8080/viewlogempdate",data)
+ }
+
 
   // addemp=(data:any)=>{
   //   this.http.post("http://localhost:8080/addemp",data)
