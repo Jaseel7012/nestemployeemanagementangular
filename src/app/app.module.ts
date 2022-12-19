@@ -25,7 +25,9 @@ import { EmplNavbarComponent } from './empl-navbar/empl-navbar.component';
 import { SecurityProfileComponent } from './security-profile/security-profile.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
-import { VisitorLogComponent } from './visitor-log/visitor-log.component'
+import { VisitorLogComponent } from './visitor-log/visitor-log.component';
+import { EmployeeLogComponent } from './employee-log/employee-log.component';
+import { ViewAllEmplLogsComponent } from './view-all-empl-logs/view-all-empl-logs.component'
 const myroute:Routes=[
 {
   path:''
@@ -75,6 +77,13 @@ component:LeaveStatusviewComponent},{
 },{
   path:'visitorlog',
   component:VisitorLogComponent
+},{
+  path:'emplog',
+  component:EmployeeLogComponent,
+ 
+},{
+  path:'viewallemplog',
+  component:ViewAllEmplLogsComponent
 }
 ]
 @NgModule({
@@ -99,7 +108,9 @@ component:LeaveStatusviewComponent},{
     SecurityProfileComponent,
     SecurityLoginComponent,
     SecurityNavbarComponent,
-    VisitorLogComponent
+    VisitorLogComponent,
+    EmployeeLogComponent,
+    ViewAllEmplLogsComponent
   ],
   imports: [
     BrowserModule,

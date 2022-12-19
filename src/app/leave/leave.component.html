@@ -1,4 +1,4 @@
-
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -22,6 +22,24 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr class="p-5 mt-2" *ngFor="let i of data">
+                                
+                                <td>{{i.username}}</td>
+                                <td>{{i.type}}</td>
+                                <td>{{i.frmdate}}</td>
+                                <td>{{i.todate}}</td>
+                                <td>{{i.applydate}}</td>
+                                <td>
+                                    <span [ngClass]="{
+                                        'bg-success':i.leavestatus==1,
+                                        'bg-warning ':i.leavestatus==0,
+                                        'bg-danger':i.leavestatus==-1
+
+                                    }" class="badge rounded-pill ">{{i.leavestatus}}</span>
+                                </td>
+                                
+
+                            </tr>
                             
                         </tbody>
                     </table>
