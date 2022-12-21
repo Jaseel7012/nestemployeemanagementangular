@@ -8,6 +8,40 @@
                     <table class="table">
                         <thead>
                             <tr>
+                                <th scope="col">Casual</th>
+                                <th scope="col">Sick</th>
+                                <th scope="col">Special</th>
+                                <th scope="col">Remaining Leaves</th>
+                                
+                            </tr>
+                        </thead>
+                            <tr *ngFor="let i of countleave">
+                                <td>{{i.cas}}</td>
+                                <td>{{i.sick}}</td>
+                                <td>{{i.special}}</td>
+                                <td>{{r}}</td>
+                            </tr>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h3 class="text-center">Applied Leaves</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
                                 <th scope="col">From Date</th>
                                 <th scope="col">To Date</th>
                                 <th scope="col">Leave Type</th>
@@ -16,6 +50,13 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr *ngFor="let i of fetchdata">
+                                <td>{{i.frmdate}}</td>
+                                <td>{{i.todate}}</td>
+                                <td>{{i.type}}</td>
+                                <td>{{i.remarks}}</td>
+                                <td>{{i.leavestatus}}</td>
+                            </tr>
 
                         </tbody>
                     </table>

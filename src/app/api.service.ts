@@ -62,6 +62,24 @@ empprofile=(data3:any)=>{
  visitorslogviewbyDate=(data:any)=>{
   return this.http.post("http://localhost:8080/visitorlogbydate",data)
  }
+ emplleaveapply=(data:any)=>{
+  return this.http.post("http://localhost:8080/leaveapply",data)
+ }
+ empleavestatus=(data:any)=>{
+  return this.http.post("http://localhost:8080/leavestatus",data)
+ }
+ empleavecount=(data:any)=>{
+  return this.http.post("http://localhost:8080/viewcountempleave",data)
+ }
+ emplogadd=(data:any)=>{
+  return this.http.post("http://localhost:8080/addemplog",data)
+ }
+visitorlogadd=(data:any)=>{
+  return this.http.post("http://localhost:8080/addvisitorlog",data)
+}
+viewalllogssecurity=()=>{
+  return this.http.get("http://localhost:8080/viewvisitorlog")
+}
 
   // addemp=(data:any)=>{
   //   this.http.post("http://localhost:8080/addemp",data)

@@ -7,18 +7,30 @@
                     <h4 class="text-center mt-2">Leave Application</h4>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" name="name" [(ngModel)]="name"  class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Employee Id</label>
+                    <input type="text" name="emp_id" [(ngModel)]="emp_id"  class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">From Date</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="frmdate" [(ngModel)]="frmdate" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">To Date</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input type="date" name="todate" [(ngModel)]="todate" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Apply Date</label>
+                    <input type="date" name="applydate" [(ngModel)]="applydate" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="form-group">
                         <label for="" class="form-label">Leave Type:</label>
                         <select name="type" [(ngModel)]="type" id="" class="form-control">
-                            <option value="Casual">Casual</option>
+                            <option value="cas">Casual</option>
                             <option value="sick">Sick</option>
                             <option value="special">Special</option>
                         </select>
@@ -26,7 +38,7 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Remarks</label>
-                    <input type="text" name=""  class="form-control">
+                    <input type="text" name="remarks" [(ngModel)]="remarks" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-3">
                     <button class="btn btn-success" (click)="read()">Apply</button>

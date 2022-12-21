@@ -20,27 +20,38 @@
                             
                         </div>
                         <div class="row">
+                            
                             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngFor="let i of datesearch" >
-                                <table class="table table-stripped text-center mt-3">
+                                
+                                <table class="table table-stripped text-center mt-3"  >
+                                    
                                     <thead>
-                                        <tr>
+                                        <tr >
                                             <th>Name</th>
                                             <th>Purpose</th>
                                             <th>Entry Time</th>
                                             <th>Exit Time</th>
                                         </tr>
                                     </thead>
+                                    
                                     <tbody>
                                         <tr >
                                             <td>{{i.name}}</td>
                                             <td>{{i.purpose}}</td>
                                             <td>{{i.entrytime}}</td>
                                             <td>{{i.exittime}}</td>
+                                            
                                         </tr>
+                                        
                                     </tbody>
                                 </table>
+                                
+                                
+                                
+                                
 
                             </div>
+                            
                         </div>
                     </div>
                     <h3 class="text-center">Quest Logs</h3>

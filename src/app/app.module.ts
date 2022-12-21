@@ -31,6 +31,7 @@ import { ViewAllEmplLogsComponent } from './view-all-empl-logs/view-all-empl-log
 import { EmplogByNameComponent } from './emplog-by-name/emplog-by-name.component'
 import { ViewAllQuestLogComponent } from './view-all-quest-log/view-all-quest-log.component';
 import { ViewAllvisitorLogComponent } from './view-allvisitor-log/view-allvisitor-log.component';
+import { SecurityViewLogsComponent } from './security-view-logs/security-view-logs.component';
 const myroute:Routes=[
 {
   path:''
@@ -90,6 +91,9 @@ component:LeaveStatusviewComponent},{
 },{
   path:'viewallvisitortlog',
   component:ViewAllvisitorLogComponent
+},{
+  path:'secviewlogs',
+  component:SecurityViewLogsComponent
 }
 ]
 @NgModule({
@@ -118,7 +122,8 @@ component:LeaveStatusviewComponent},{
     EmployeeLogComponent,
     ViewAllEmplLogsComponent,
     EmplogByNameComponent,
-    ViewAllvisitorLogComponent
+    ViewAllvisitorLogComponent,
+    SecurityViewLogsComponent
   ],
   imports: [
     BrowserModule,
