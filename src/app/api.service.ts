@@ -56,7 +56,12 @@ empprofile=(data3:any)=>{
  empalllogbydate=(data:any)=>{
   return this.http.post("http://localhost:8080/viewlogempdate",data)
  }
-
+ visitorslogview=()=>{
+  return this.http.get("http://localhost:8080/viewvisitorlog")
+ }
+ visitorslogviewbyDate=(data:any)=>{
+  return this.http.post("http://localhost:8080/visitorlogbydate",data)
+ }
 
   // addemp=(data:any)=>{
   //   this.http.post("http://localhost:8080/addemp",data)

@@ -17,12 +17,14 @@
                                 <th>To</th>
                                 <th>Applied</th>
                                 <th>Status</th>
-                                <th>Remarks</th>
+                                <th>Accept</th>
+                                <th></th>
+                                <th>Reject</th>
                                
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="p-5 mt-2" *ngFor="let i of data">
+                            <tr class="p-5 mt-2" *ngFor="let i of data" >
                                 
                                 <td>{{i.username}}</td>
                                 <td>{{i.type}}</td>
@@ -37,6 +39,9 @@
 
                                     }" class="badge rounded-pill ">{{i.leavestatus}}</span>
                                 </td>
+                                <td *ngIf="i.leavestatus!=1; else elseblock" ><button class="btn btn-success" >Accept</button></td><ng-template #elseblock>Accepted</ng-template>
+                                
+                                <td><button class="btn btn-danger" *ngIf="i.leavestatus!=1">Reject</button></td>
                                 
 
                             </tr>

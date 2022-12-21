@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -7,34 +7,34 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="row">
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <h4 class="text-center">Employee Logs</h4>
+                            <h4 class="text-center">Quest Logs</h4>
                             
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Date</label>
-                            <input type="date" name="date" [(ngModel)]="date" class="form-control" placeholder="">
-                            <button class="btn btn-warning mt-3 float-end" (click)="read()" >Search</button>
+                            <input type="date"  class="form-control" placeholder="">
+                            <button class="btn btn-warning mt-3 float-end"  >Search</button>
                             
 
                             
                         </div>
                         <div class="row">
-                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngFor="let i of search ">
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
                                 <table class="table table-stripped text-center mt-3">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
-                                            <th>Date</th>
+                                            <th>Purpose</th>
                                             <th>Entry Time</th>
                                             <th>Exit Time</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr >
-                                            <td>{{i.name}}</td>
-                                            <td>{{i.date}}</td>
-                                            <td>{{i.entry_time}}</td>
-                                            <td>{{i.exit_time}}</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                     </div>
-                    <h3 class="text-center">All Employee Logs</h3>
+                    <!-- <h3 class="text-center">All Employee Logs</h3>
                     <hr>
                     <table class="table table-stripped text-center mt-3">
                         <thead>
@@ -61,7 +61,7 @@
                                 <td>{{i.exitTime}}</td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table> -->
                 </div>
             </div>
         </div>

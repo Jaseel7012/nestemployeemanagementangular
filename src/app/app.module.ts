@@ -27,7 +27,10 @@ import { SecurityLoginComponent } from './security-login/security-login.componen
 import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
 import { VisitorLogComponent } from './visitor-log/visitor-log.component';
 import { EmployeeLogComponent } from './employee-log/employee-log.component';
-import { ViewAllEmplLogsComponent } from './view-all-empl-logs/view-all-empl-logs.component'
+import { ViewAllEmplLogsComponent } from './view-all-empl-logs/view-all-empl-logs.component';
+import { EmplogByNameComponent } from './emplog-by-name/emplog-by-name.component'
+import { ViewAllQuestLogComponent } from './view-all-quest-log/view-all-quest-log.component';
+import { ViewAllvisitorLogComponent } from './view-allvisitor-log/view-allvisitor-log.component';
 const myroute:Routes=[
 {
   path:''
@@ -84,6 +87,9 @@ component:LeaveStatusviewComponent},{
 },{
   path:'viewallemplog',
   component:ViewAllEmplLogsComponent
+},{
+  path:'viewallvisitortlog',
+  component:ViewAllvisitorLogComponent
 }
 ]
 @NgModule({
@@ -110,7 +116,9 @@ component:LeaveStatusviewComponent},{
     SecurityNavbarComponent,
     VisitorLogComponent,
     EmployeeLogComponent,
-    ViewAllEmplLogsComponent
+    ViewAllEmplLogsComponent,
+    EmplogByNameComponent,
+    ViewAllvisitorLogComponent
   ],
   imports: [
     BrowserModule,

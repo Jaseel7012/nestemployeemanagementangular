@@ -7,10 +7,12 @@ import { ApiService } from '../api.service';
   styleUrls: ['./leave.component.css']
 })
 export class LeaveComponent {
+   a="applied"
   constructor(private api:ApiService){
     this.api.leaveadminview().subscribe(
       (resp:any)=>{
         this.data=resp
+        
       }
     )
   }
