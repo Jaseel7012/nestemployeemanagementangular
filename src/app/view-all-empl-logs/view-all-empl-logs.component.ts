@@ -9,18 +9,18 @@ import { ApiService } from '../api.service';
 export class ViewAllEmplLogsComponent {
   date=""
   search:any=[]
-  // constructor(private api:ApiService){
-  //   this.api.emplallogsview().subscribe(
-  //     (resp)=>{
-  //       this.nameemp=resp
-  //       console.log(resp)
-  //     }
-  //   )
-  // }
+  constructor(private api:ApiService){
+    this.api.emplallogsview().subscribe(
+      (resp)=>{
+        this.nameemp=resp
+        console.log(resp)
+      }
+    )
+  }
 
 
 
-constructor(private api:ApiService){}
+// constructor(private api:ApiService){}
 
   read=()=>{
     let data:any={
