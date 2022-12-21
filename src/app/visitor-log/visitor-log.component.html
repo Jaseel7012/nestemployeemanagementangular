@@ -4,34 +4,32 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <h3 class="text-center">Visitor Log</h3>
+                <hr>
             </div>
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label"> Name</label>
-                <input type="text" class="form-control">
+                <input type="text" name="name" [(ngModel)]="name" class="form-control">
             </div>
-            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                <label for="" class="form-label"> Quest Id</label>
-                <input type="text" class="form-control">
-            </div>
+            
 
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                <label for="" class="form-label"> Phone Number</label>
-                <input type="text" class="form-control">
+                <label for="" class="form-label"> Purpose</label>
+                <input type="text" name="purpose" [(ngModel)]="purpose" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label"> Date</label>
-                <input type="text" class="form-control">
+                <input type="date" name="date" [(ngModel)]="date" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label"> Entry Time</label>
-                <input type="time" class="form-control">
+                <input type="time" name="entrytime" [(ngModel)]="entrytime" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label"> Exit Time</label>
-                <input type="text" class="form-control">
+                <input type="time" name="exittime" [(ngModel)]="exittime" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-4 text-center">
-                <button class="btn btn-success ">Add </button>
+                <button class="btn btn-success " (click)="read()">Add </button>
                
             </div>
         </div>

@@ -24,11 +24,21 @@ datesearch:any=[]
     this.api.visitorslogviewbyDate(data).subscribe(
       (resp:any)=>{
         this.datesearch=resp
+        if(resp.length==0){
+          alert("no data")
+          
+          
+        }
+        
+        
 
       }
+      
     )
+    this.date=""
   }
-
+ 
   data:any=[]
+  show=""
 
 }
